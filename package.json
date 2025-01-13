@@ -1,0 +1,25 @@
+{
+  "name": "hard-rubbish-info-website",
+  "version": "1.0.0",
+  "description": "An information website about hard rubbish disposal, including search functionality and web scraping.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "scrape": "node src/scraping/scraper.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "hard rubbish",
+    "disposal",
+    "information",
+    "web scraping"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

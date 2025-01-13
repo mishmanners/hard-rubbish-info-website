@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Hard Rubbish</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search for Hard Rubbish Disposal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Enter Your Search Criteria</h2>
+            <form id="search-form">
+                <label for="item">Item to Dispose:</label>
+                <input type="text" id="item" name="item" required>
+
+                <label for="condition">Condition:</label>
+                <select id="condition" name="condition">
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="pickup">Pickup Option:</label>
+                <input type="checkbox" id="pickup" name="pickup"> Request Pickup
+
+                <button type="submit">Search</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hard Rubbish Info Website</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="forms/searchForm.js"></script>
+</body>
+</html>
