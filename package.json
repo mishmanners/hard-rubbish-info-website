@@ -8,11 +8,12 @@
     "scrape": "node src/scraping/scraper.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.7.9",
     "cheerio": "^1.0.0-rc.10"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0",
+    "sirv-cli": "^3.0.0"
   },
   "keywords": [
     "hard rubbish",
