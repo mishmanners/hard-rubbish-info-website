@@ -1,45 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e8f5e9;
+    color: #333;
 }
 
 header {
-    background: #35424a;
+    background: #2e7d32;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 nav {
     margin: 20px 0;
+    text-align: center;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
+    font-weight: 600;
 }
 
 nav a:hover {
-    background: #e8491d;
+    background: #66bb6a;
+    border-radius: 5px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-footer {
-    background: #35424a;
+nav li {
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
     color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+h3 {
+    color: #2e7d32;
+    font-size: 2rem;
 }
 
 form {
@@ -49,23 +64,28 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form input[type="text"],
-form select {
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], select {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form input[type="submit"] {
-    background: #35424a;
+input[type="submit"] {
+    background: #2e7d32;
     color: #ffffff;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-form input[type="submit"]:hover {
-    background: #e8491d;
+input[type="submit"]:hover {
+    background: #66bb6a;
 }
