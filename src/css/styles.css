@@ -46,6 +46,7 @@ nav li {
 
 main {
     padding: 20px;
+    padding-bottom: 60px;
 }
 
 h1, h2 {
@@ -88,4 +89,14 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background: #66bb6a;
+}
+
+footer {
+    background: #2e7d32;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
