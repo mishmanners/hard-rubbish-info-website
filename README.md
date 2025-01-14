@@ -41,6 +41,6 @@ This project is licensed under the MIT License.
 
 ## Attributions
 
-- <a href="https://www.flaticon.com/free-icons/recycle" title="recycle icons">Recycle favicon from by Pixel perfect at Flaticon</a>.
+- Recycle favicon by <a href="https://www.flaticon.com/free-icons/recycle" title="recycle icons">Pixel perfect at Flaticon</a>.
 - <a href="https://designer.microsoft.com/" target="blank">Microsoft Designer</a> for the social media share card.
 - <a href="https://copilot.github.com" target="blank">GitHub Copilot</a> for pair programming.
