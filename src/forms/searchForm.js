@@ -21,7 +21,6 @@
 function updateConditionOptions() {
         const type = document.getElementById('type').value;
         const conditionSelect = document.getElementById('condition');
-        conditionSelect.innerHTML = ''; // Clear existing options
 
         // add a console log here so we can see what's happening
         console.log('type:', type);
@@ -78,6 +77,8 @@ function updateConditionOptions() {
         // add a console log here so we can see what's happening
         console.log('Options:', options);
 
+        conditionSelect.innerHTML = ''; // Clear existing options
+        
         options.forEach(option => {
             const opt = document.createElement('option');
             opt.value = option.value;

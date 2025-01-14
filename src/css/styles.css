@@ -65,7 +65,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], select, input[type="checkbox"], button {
+input[type="text"], select, input[type="checkbox"], input[type="email"], input[type="message"], button {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -74,12 +74,22 @@ label {
     margin: 10px 0 5px;
 }
 
-input[type="text"], select {
-    width: 100%;
+input[type="text"], input[type="email"], select {
+    width: 40%;
     padding: 10px;
     margin: 5px 0 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 input[type="submit"] {
