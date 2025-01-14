@@ -306,7 +306,9 @@ function fetchInformation(searchCriteria) {
                     <p>Here is the information based on your search criteria:</p>
                     <ul>
                         <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
-                        <li>Can be recycled at <a href="https://www.visy.com/services/household-recycling" target="blank">VISY</a>for free.</li>
+                        <li>Can be recycled at <a href="https://www.visy.com/services/household-recycling" target="blank">VISY</a> for free.</li>
+                        <li>Can be placed in the regular recycling bin.</li>
+                        <li>Can be donated on various Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                     </ul>
                 `;
     } else if (type === 'paper') {
