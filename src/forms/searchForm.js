@@ -94,7 +94,34 @@ function updateConditionOptions() {
                     <p>Condition: ${condition}</p>
                     <p>Here is the information based on your search criteria:</p>
                     <ul>
-                        <li>Couches are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                        <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                    </ul>
+                `;
+
+            } else if (type === 'electronics' && condition === 'working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                        <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
+                        <li>Can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
+                        <li>Can be donated to <a href="https://www.brunswicktoollibrary.org/" target="blank">libraries</a>, <a href="https://thereconnectproject.com.au/" target="blank">Connect Project</a>, <a href="https://gleegivers.au/" target="blank">Glee Givers</a>, or <a href="https://www.rimern.org.au/" target="blank">community center</a>.</li>
+                    </ul>
+                `;
+
+            } else if (type === 'electronics' && condition === 'not-working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>Can be recycled through <a href="https://recyclingnearyou.com.au/ewastescheme/" target="blank">the National Recycling Scheme</a> for free. This will include free drop off locations at various Harvey Norman stores.</li>
+                        <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                        <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/Electronic-waste" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
                     </ul>
                 `;
             } else {
@@ -127,7 +154,7 @@ function updateConditionOptions() {
         // Display the results on the page
         const resultsDiv = document.getElementById('results');
         // resultsDiv.innerHTML = `<p>Searching for: (${type}, ${condition})</p>`;
-        resultsDiv.innerHTML += resultsHtml;
+        resultsDiv.innerHTML = resultsHtml;
         
     }
     
