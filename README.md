@@ -19,12 +19,11 @@ This website was originally built for a <a href="https://dev.to/challenges/githu
 - Visit the about page for additional resources on hard rubbish disposal.
 - If you have information you'd like to add to the website, please submit it through the online contact form.
 
-
 ## Next steps
 
 TODOS:
-- Connect the site to Netifly to handle the contact form
-- Fetch data from external sources related to hard rubbish disposal and build out the database (currrently the search results are hard coded)
+- Connect the site to Netlify to handle the contact form
+- Fetch data from external sources related to hard rubbish disposal and build out the database (currently the search results are hard coded)
 
 Future functionality:
 
@@ -33,7 +32,7 @@ In future, I'd love to build out the functionality of this website:
 - **Web Scraping**: Fetch data from external sources related to hard rubbish disposal.
 - **Login**: log in and track what items you are looking to get rid of.
 - **Facebook plug-in**: to list the Facebook pages in the area that deal with hard rubbish.
-- **Locality**: Build out the location data to include more council, states, and countries. Currently the wesbite is only showing information for Merri-Bek Council.
+- **Locality**: Build out the location data to include more council, states, and countries. Currently the website is only showing information for Merri-Bek Council.
 - **Leaderboard**: Track your items and collect points for items that you 'save' from hardrubbish; both as a "seller" and "buyer".
 - **Connect with local businesses**: offer free advertising in return for products, discounts, or services that can be used as rewards; gamify the site.
 
