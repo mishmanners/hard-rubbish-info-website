@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Search Form Tests', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('http://localhost:5000/search.html');
+    await page.goto('http://localhost:8080/search.html');
   });
 
   test('should have all form elements', async ({ page }) => {

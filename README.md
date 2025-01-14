@@ -56,3 +56,7 @@ hard-rubbish-info-website
 ## License
 
 This project is licensed under the MIT License.
+
+## Attributions
+
+<a href="https://www.flaticon.com/free-icons/recycle" title="recycle icons">Recycle icons created by Pixel perfect - Flaticon</a>

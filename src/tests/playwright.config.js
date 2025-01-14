@@ -11,5 +11,8 @@ module.exports = defineConfig({
     command: 'npm run start',
     port: 5000,
     reuseExistingServer: !process.env.CI,
+    timeout: 120 * 1000
   },
+  reporter: [['html'], ['list']],
+  workers: 1
 });
