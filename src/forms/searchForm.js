@@ -387,7 +387,19 @@ function updateConditionOptions() {
                                                         <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
                                                               
                                                         </ul>
-                                                    `;   
+                                                    `;
+                                                } else if (type === 'paint') {
+                                                    return `
+                                                            <h3>Search Results</h3>
+                                                            <p>Type: ${type}</p>
+                                                            <p>Condition: ${condition}</p>
+                                                            <p>Here is the information based on your search criteria:</p>
+                                                            <ul>   
+                                                            <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
+                                                            <li>Can be taken to a <a href="https://www.sustainability.vic.gov.au/circular-economy-and-recycling/at-home/dispose-of-household-chemicals-detox-your-home" target="blank">Detox your Home</a> event for free.</li>
+                                                                  
+                                                            </ul>
+                                                        `;    
                                             } else {
                 return `
                     <h3>Search Results</h3>
