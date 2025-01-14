@@ -49,6 +49,12 @@ function updateConditionOptions() {
             { value: 'useable', text: 'Useable' },
             { value: 'nonuse', text: 'Not useable' },
         ];
+
+    } else if (type === 'stationery') {
+        options = [
+            { value: 'useable', text: 'Useable' },
+            { value: 'nonuse', text: 'Not useable' },
+        ];
     
     } else {
         options = [
@@ -117,6 +123,29 @@ function fetchInformation(searchCriteria) {
             <ul>
                 <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
                 <li>Some furniture stores take old mattresses when you purchase a new one, even if your mattress is unusable. Call ahead to check if they offer this service.</li>
+            </ul>
+        `;
+    } else if (type === 'stationery' && condition === 'useable') {
+        return `
+            <h3>Search Results</h3>
+            <p>Type: ${type}</p>
+            <p>Condition: ${condition}</p>
+            <p>Here is the information based on your search criteria:</p>
+            <ul>
+                <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>.</li>
+                <li>Can be donated to <a href="https://www.facebook.com/profile.php?id=100090143947576" target="blank>The Pencils Project</a></li>
+                <li>Can be recycled at <a href="https://www.officeworks.com.au/information/about-us/recycling" target="blank">Officeworks</a>for free.</li>
+                </ul>
+        `;
+    } else if (type === 'stationery' && condition === 'nonuse') {
+        return `
+            <h3>Search Results</h3>
+            <p>Type: ${type}</p>
+            <p>Condition: ${condition}</p>
+            <p>Here is the information based on your search criteria:</p>
+            <ul>
+                <li>Can be recycled at <a href="https://www.officeworks.com.au/information/about-us/recycling" target="blank">Officeworks</a>for free.</li>
             </ul>
         `;
     } else if (type === 'electronics' && condition === 'working') {
