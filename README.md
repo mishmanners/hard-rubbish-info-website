@@ -47,6 +47,6 @@ This project is licensed under the MIT License.
 - <a href="https://designer.microsoft.com/" target="blank">Microsoft Designer</a> for the social media share card.
 - <a href="https://copilot.github.com" target="blank">GitHub Copilot</a> for pair programming.
 
-UPDATE: After posting this website on the community Facebook page, here is already a tonne of :heart: for the website, with one person calling it "Simple and effective 🙂" and another saying "works really well. Thanks for this":
+UPDATE: After posting this website on the community Facebook page, there is already a tonne of :heart: for the website, with one person calling it "Simple and effective 🙂" and another saying "works really well. Thanks for this":
 
 ![image from Facebook saying "love this! well done It looks very useful and deserves to be well used everywhere"](image.png)
