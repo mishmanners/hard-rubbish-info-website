@@ -364,7 +364,19 @@ function updateConditionOptions() {
                                                     <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
                                                     <li>Aluminium cans can be donated to <a href="https://www.instagram.com/leafcandleco" target="blank">Leaf Candle Co</a> for free. She'll come and collect your cans (even dirty cans) and make candles from them.</li>   
                                                 </ul>
-                                            `;   
+                                            `;
+                                        } else if (type === 'gas') {
+                                            return `
+                                                    <h3>Search Results</h3>
+                                                    <p>Type: ${type}</p>
+                                                    <p>Condition: ${condition}</p>
+                                                    <p>Here is the information based on your search criteria:</p>
+                                                    <ul>
+                                                    <li>Can be exchanged when you purchase a new BBQ can from places like <a href="https://www.bunnings.com.au/products/outdoor-living/barbecue" target="blank">Bunnings</a>.</li>     
+                                                    <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+                                                          
+                                                    </ul>
+                                                `;   
             } else {
                 return `
                     <h3>Search Results</h3>
