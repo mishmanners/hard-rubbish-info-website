@@ -119,6 +119,7 @@ function fetchInformation(searchCriteria) {
                 <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                 <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
                 <li>Some furniture stores take old mattresses when you purchase a new one. Call ahead to check if they offer this service.</li>
+                <a href="https://www.rimern.org.au/rimern-home/donate/donate-goods/" target="blank">RIMERN Home Donate Goods</a> will accept mattress in good condition.</li>
             </ul>
         `;
     } else if (type === 'mattress' && condition === 'nonuse') {
