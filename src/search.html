@@ -22,43 +22,41 @@
         <section>
             <h3>What do you want to get rid of?</h3>
             <form id="search-form">
-                <label for="item">Item to Dispose:</label>
+                <label for="item">What is the item?</label>
                 <input type="text" id="item" name="item" required>
 
                 <!-- need an input drop down for selecting the type of hard rubbish -->
 
-                <label for="type">What kind of item do you have?</label>
+                <label for="type">What kind of item is this?</label>
                 <select id="type" name="type" onchange="updateConditionOptions()">
+                    <!-- set the default input as "select your item" -->
+                    <option selected="selected">Select your item</option>
                     <option value="furniture">Furniture</option>
                     <option value="lappliances">Large appliances</option>
                     <option value="sappliances">Small appliances</option>
                     <option value="electronics">Electronics</option>
                     <option value="building">Building Materials</option>
                     <option value="batteries">Batteries</option>
-                    <option value="cardboard">cardboard</option>
+                    <option value="cardboard">Cardboard</option>
+                    <option value="paper">Paper</option>
                     <option value="clothing">Clothing</option>
                     <option value="ink">Ink Cartridges</option>
                     <option value="oil">Oil</option>
                     <option value="styrofoam">Styrofoam</option>
-                    <options value="toys">Toys</option>
+                    <option value="toys">Toys</option>
                     <option value="aluminium">Aluminium Cans</option>
                     <option value="glass">Glass</option>
-                    <option value="BBQ gas bottles">Paper</option>
+                    <option value="gas">BBQ gas bottles</option>
                     <option value="mattress">Mattress</option>
                     <option value="tyres">Tyres</option>
                     <option value="paint">Paints</option>
                     <option value="other">Other</option>
                 </select>
 
-                <label for="condition">Condition:</label>
+                <label for="condition">What is the condition of the item?</label>
                 <select id="condition" name="condition">
-                    <option value="good">Good</option>
-                    <option value="fair">Fair</option>
-                    <option value="poor">Poor</option>
+                    <!-- options should be shown based on the javascript onchange listener-->
                 </select>
-
-                <label for="pickup">Pickup Option:</label>
-                <input type="checkbox" id="pickup" name="pickup"> Request Pickup
 
                 <button type="submit">Search</button>
             </form>
