@@ -214,7 +214,6 @@ function updateConditionOptions() {
                             <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                             <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
                             <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>.</li>
-                            // >
                             
                         </ul>
                     `;
@@ -231,7 +230,28 @@ function updateConditionOptions() {
                             <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
                         </ul>
                     `;
-
+            
+            } else if (type === 'glass' && condition === 'broken') {
+                    return `
+                        <h3>Search Results</h3>
+                        <p>Type: ${type}</p>
+                        <p>Condition: ${condition}</p>
+                        <p>Here is the information based on your search criteria:</p>
+                        <ul>
+                            <li>Should be placed in the regular rubbish bin.</li>
+                        </ul>
+                    `;
+            
+            } else if (type === 'glass' && condition === 'nbroken') {
+                    return `
+                        <h3>Search Results</h3>
+                        <p>Type: ${type}</p>
+                        <p>Condition: ${condition}</p>
+                        <p>Here is the information based on your search criteria:</p>
+                        <ul>
+                            <li>Should be placed in the glass recycling bin.</li>
+                        </ul>
+                    `;
             
             } else {
                 return `
