@@ -2,6 +2,8 @@
 
 Recycle, upcycle, or donate your unwanted items. This website provides users with search functionality to help them find the best way to correctly dispose of items. This will enable us to save rubbish from landlife and ensure we have a brighter and greener planet.
 
+![RePurposefulShareCard](https://github.com/user-attachments/assets/672c6605-a09b-4171-9124-8e87e4305f55)
+
 ## Features
 
 - **Search Functionality**: Enter criteria to find specific disposal information.
