@@ -13,6 +13,7 @@ test.describe('Search Form Tests', () => {
   });
 
   test('should update condition options when type changes', async ({ page }) => {
+    await page.fill('#item', 'couch');
     await page.selectOption('#type', 'furniture');
     const options = await page.$$eval('#condition option', options => 
       options.map(option => option.value)
