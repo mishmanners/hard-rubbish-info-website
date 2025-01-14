@@ -1,22 +1,23 @@
 const { test, expect } = require('@playwright/test');
 
-test.describe('About Page Links', () => {
-    test.beforeEach(async ({ page }) => {
-        await page.goto('http://localhost:8080/about');
-    });
+test('should have 13 working links on the page', async ({ page }) => {
+    // Navigate to the about page
+    await page.goto('http://localhost:8080/about');
 
-    test('should have five working links', async ({ page }) => {
-        const links = await page.$$('a');
-        expect(links.length).toBe(5);
+    // Get all links on the page
+    const links = await page.locator('a');
+    
+    // Check if there are exactly 13 links
+    await expect(links).toHaveCount(13);
 
-        for (const link of links) {
-            const href = await link.getAttribute('href');
-            const [response] = await Promise.all([
-                page.waitForResponse(href),
-                link.click(),
-            ]);
-            expect(response.ok()).toBeTruthy();
-            await page.goBack();
-        }
-    });
+    // Get all href attributes
+    const hrefs = await links.evaluateAll(elements => 
+        elements.map(el => el.href)
+    );
+
+    // Check each link
+    for (const href of hrefs) {
+        const response = await page.request.get(href);
+        expect(response.ok()).toBeTruthy();
+    }
 });

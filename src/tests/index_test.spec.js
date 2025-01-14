@@ -4,5 +4,5 @@ test('home page should load and have the "repurposeful" h1 heading', async ({ pa
     await page.goto('http://localhost:8080/index'); // Replace with your actual URL
 
     const heading = await page.locator('h1');
-    await expect(heading).toHaveText('repurposeful');
+    await expect(heading).toHaveText('RePurposeful');
 });
