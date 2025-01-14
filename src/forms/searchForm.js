@@ -124,6 +124,86 @@ function updateConditionOptions() {
                         <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/Electronic-waste" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
                     </ul>
                 `;
+
+            } else if (type === 'lappliances' && condition === 'working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                        <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
+                        <li>Can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
+                    </ul>
+                `;
+
+            } else if (type === 'lappliances' && condition === 'not-working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>TVs and monitors can be recycled through <a href="https://recyclingnearyou.com.au/ewastescheme/" target="blank">the National Recycling Scheme</a> for free. This will include free drop off locations at various Harvey Norman stores.</li>
+                        <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                        <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+                    </ul>
+                `;
+            } else if (type === 'sappliances' && condition === 'working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                        <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
+                        <li>Can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
+                    </ul>
+                `;
+
+            } else if (type === 'sappliances' && condition === 'not-working') {
+                return `
+                    <h3>Search Results</h3>
+                    <p>Type: ${type}</p>
+                    <p>Condition: ${condition}</p>
+                    <p>Here is the information based on your search criteria:</p>
+                    <ul>
+                        <li>Very small appliances can be placed in the regular rubbish bin.</li>
+                        <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                        <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+                    </ul>
+                `;
+
+            } else if (type === 'clothing' && condition === 'wearable') {
+                    return `
+                        <h3>Search Results</h3>
+                        <p>Type: ${type}</p>
+                        <p>Condition: ${condition}</p>
+                        <p>Here is the information based on your search criteria:</p>
+                        <ul>
+                            <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                            <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
+                            <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>. Call ahead to ensure they accept furniture, as not all shops are large enough to accept furniture.</li>
+                            <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
+                        </ul>
+                    `;
+            
+                } else if (type === 'clothing' && condition === 'nonwear') {
+                    return `
+                        <h3>Search Results</h3>
+                        <p>Type: ${type}</p>
+                        <p>Condition: ${condition}</p>
+                        <p>Here is the information based on your search criteria:</p>
+                        <ul>
+                            <li>Recycle unwearable clothing and unusable bedding through <a href="https://www.after.net.au/" target="blank">After Recycling</a>. They will recycle the textiles into industrial rags, insulation, and other products. Book a collection from them. directly.</li>
+                            <li>Small amounts of clothing can be placed in the regular rubbish bin.</li>
+                            <li>Are accepted for hard rubbish collection. You are eligible for two hard rubbish collections per calendar year. Book your hard rubbish on the <a href="https://www.merri-bek.vic.gov.au/living-in-merri-bek/waste-and-recycling/bins-and-collection-services/hard-waste-collection/" target="blank">Merri-Bek Council website</a>. Please place them on the nature strip the night before your collection day with the hard rubbish collection label that you'll receive in the mail.</li>
+                        </ul>
+                    `;
+
+            
             } else {
                 return `
                     <h3>Search Results</h3>
