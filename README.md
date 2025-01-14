@@ -1,6 +1,6 @@
 # RePurposeful
 
-Recycle, upcycle, or donate your unwanted items. This website provides users with search functionality to help them find the best way to correctly dispose of items. This will enable us to save rubbish from landlife and ensure we have a brighter and greener planet.
+Recycle, upcycle, or donate your unwanted items. This website provides users with search functionality to help them find the best way to correctly dispose of items. This will enable us to save rubbish from landfill and ensure we have a brighter and greener planet.
 
 This website was originally built for a <a href="https://dev.to/challenges/github" target="blank">hackathon</a>.
         <section>
