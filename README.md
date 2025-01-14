@@ -1,34 +1,17 @@
-# Hard Rubbish Information Website
+# RePurposeful
 
-This project is an informational website dedicated to hard rubbish disposal. It provides users with resources, guidelines, and a search functionality to help them find the right information based on the items they wish to dispose of.
-
-## Project Structure
-
-```
-hard-rubbish-info-website
-├── src
-│   ├── index.html          # Main entry point of the website
-│   ├── about.html          # Information about hard rubbish
-│   ├── contact.html        # Contact information and feedback form
-│   ├── search.html         # Search form for disposal items
-│   ├── css
-│   │   └── styles.css      # Styles for the website
-│   ├── js
-│   │   └── scripts.js      # Client-side JavaScript functionality
-│   ├── forms
-│   │   └── searchForm.js    # Functions for handling search form submission
-│   └── scraping
-│       └── scraper.js      # Web scraping logic for external data
-├── package.json            # npm configuration file
-├── README.md               # Project documentation
-└── .gitignore              # Files to be ignored by version control
-```
+Recycle, upcycle, or donate your unwanted items. This website provides users with search functionality to help them find the best way to correctly dispose of items. This will enable us to save rubbish from landlife and ensure we have a brighter and greener planet.
 
 ## Features
 
+- **Search Functionality**: Enter criteria to find specific disposal information.
 - **Informational Pages**: Learn about hard rubbish and its disposal guidelines.
 - **Contact Form**: Reach out with inquiries or feedback.
-- **Search Functionality**: Enter criteria to find specific disposal information.
+
+## Next steps
+
+In future, I'd love to build out the functionality of this website:
+
 - **Web Scraping**: Fetch data from external sources related to hard rubbish disposal.
 
 ## Setup Instructions
