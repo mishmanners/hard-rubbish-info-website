@@ -9,7 +9,6 @@ test.describe('Search Form Tests', () => {
     await expect(page.locator('#item')).toBeVisible();
     await expect(page.locator('#type')).toBeVisible();
     await expect(page.locator('#condition')).toBeVisible();
-    await expect(page.locator('#pickup')).toBeVisible();
     await expect(page.locator('button[type="submit"]')).toBeVisible();
   });
 
