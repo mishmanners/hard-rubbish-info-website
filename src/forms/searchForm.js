@@ -126,7 +126,7 @@ function updateConditionOptions() {
             
         // Display the results on the page
         const resultsDiv = document.getElementById('results');
-        resultsDiv.innerHTML = `<p>Searching for: (${type}, ${condition})</p>`;
+        // resultsDiv.innerHTML = `<p>Searching for: (${type}, ${condition})</p>`;
         resultsDiv.innerHTML += resultsHtml;
         
     }
