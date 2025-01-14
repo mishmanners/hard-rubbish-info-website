@@ -2,8 +2,7 @@
 
 Recycle, upcycle, or donate your unwanted items. This website provides users with search functionality to help them find the best way to correctly dispose of items. This will enable us to save rubbish from landfill and ensure we have a brighter and greener planet.
 
-This website was originally built for a <a href="https://dev.to/challenges/github" target="blank">hackathon</a>.
-        <section>
+This website was originally built for a <a href="https://dev.to/challenges/github" target="blank">hackathon</a>. You can read the full write-up about my submission and experience with GitHub Copilot on the <a href="https://dev.to/mishmanners/repurposeful-recycle-upcycle-or-donate-your-unwanted-items-1pj6" target="blank">DEV website</a>.
 
 ![RePurposefulShareCard](https://github.com/user-attachments/assets/672c6605-a09b-4171-9124-8e87e4305f55)
 
