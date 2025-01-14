@@ -377,7 +377,18 @@ function updateConditionOptions() {
                                                           
                                                     </ul>
                                                 `;   
-            } else {
+                                            } else if (type === 'tyres') {
+                                                return `
+                                                        <h3>Search Results</h3>
+                                                        <p>Type: ${type}</p>
+                                                        <p>Condition: ${condition}</p>
+                                                        <p>Here is the information based on your search criteria:</p>
+                                                        <ul>   
+                                                        <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+                                                              
+                                                        </ul>
+                                                    `;   
+                                            } else {
                 return `
                     <h3>Search Results</h3>
                     <p>Type: ${type}</p>
