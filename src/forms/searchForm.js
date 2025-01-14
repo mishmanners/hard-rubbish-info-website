@@ -1,23 +1,3 @@
-// export function handleSearchFormSubmission(event) {
-    // event.preventDefault();
-    
-    // const item = document.getElementById('item').value;
-    // const condition = document.querySelector('input[name="condition"]:checked').value;
-    // const location = document.getElementById('location').value;
-
-    // const searchCriteria = {
-    //    item: item,
-    //    condition: condition
-    //};
-
-    // Process the search criteria (e.g., send to server or display results)
-    // console.log('Search Criteria:', searchCriteria);
-    
-    // Here you can add the logic to send the searchCriteria to the server or handle it as needed
-
-    // Options for the seach form
-// }
-
 function updateConditionOptions() {
         const type = document.getElementById('type').value;
         const conditionSelect = document.getElementById('condition');
@@ -29,9 +9,8 @@ function updateConditionOptions() {
 
         if (type === 'furniture') {
             options = [
-                { value: 'good', text: 'Good' },
-                { value: 'fair', text: 'Fair' },
-                { value: 'poor', text: 'Poor' }
+                { value: 'useable', text: 'Useable' },
+                { value: 'nonuse', text: 'Not useable' },
             ];
         } else if (type === 'electronics') {
             options = [
@@ -52,20 +31,23 @@ function updateConditionOptions() {
             ];
         } else if (type === 'clothing') {
             options = [
-                { value: 'good', text: 'Good' },
-                { value: 'fair', text: 'Fair' },
-                { value: 'poor', text: 'Poor' }
+                { value: 'wearable', text: 'Wearable' },
+                { value: 'nonwear', text: 'Not wearable' },
             ];
         } else if (type === 'toys') {
             options = [
-                { value: 'good', text: 'Good' },
-                { value: 'fair', text: 'Fair' },
-                { value: 'poor', text: 'Poor' }
+                { value: 'useable', text: 'Useable' },
+                { value: 'nonuse', text: 'Not useable' },
             ];
         } else if (type === 'glass') {
             options = [
                 { value: 'broken', text: 'Broken' },
                 { value: 'nbroken', text: 'Not Broken' },
+            ];
+        } else if (type === 'mattress') {
+            options = [
+                { value: 'useable', text: 'Useable' },
+                { value: 'nonuse', text: 'Not useable' },
             ];
        
         } else {
@@ -78,7 +60,7 @@ function updateConditionOptions() {
         console.log('Options:', options);
 
         conditionSelect.innerHTML = ''; // Clear existing options
-        
+
         options.forEach(option => {
             const opt = document.createElement('option');
             opt.value = option.value;
@@ -87,28 +69,33 @@ function updateConditionOptions() {
         });
     }
 
-    // Example of processing the search form submission
-    document.getElementById('search-form').addEventListener('submit', function(event) {
+    function handleSearchFormSubmission(event) {
         event.preventDefault(); // Prevent the default form submission
 
         const item = document.getElementById('item').value;
+        const type = document.getElementById('type').value;
         const condition = document.getElementById('condition').value;
-        const location = document.getElementById('location').value;
 
         const searchCriteria = {
             item: item,
+            type: type,
             condition: condition,
-            location: location
         };
 
         // Process the search criteria (e.g., send to server or display results)
         console.log('Search Criteria:', searchCriteria);
 
-        // Here you can add the logic to send the searchCriteria to the server or handle it as needed
-    });
+        // Fetch or generate the information based on the search criteria
+        const resultsHtml = fetchInformation(searchCriteria);
 
+        // For example, you can display the results on the page
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = `<p>Searching for: ${item} (${type}, ${condition})</p>`;
+    }
 
-// export function initializeSearchForm() {
-//    const searchForm = document.getElementById('searchForm');
-//    searchForm.addEventListener('submit', handleSearchFormSubmission);
-// }
+    // Attach the function to the select element
+    document.getElementById('type').addEventListener('change', updateConditionOptions);
+
+    // Attach the form submission handler
+    document.getElementById('search-form').addEventListener('submit', handleSearchFormSubmission);
+
