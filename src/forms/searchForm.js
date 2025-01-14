@@ -332,8 +332,39 @@ function updateConditionOptions() {
                                     <ul>
                                         <li>Can be recycled at <a href="https://www.officeworks.com.au/information/about-us/recycling" target="blank">Officeworks</a>for free.</li>
                                     </ul>
-                                `;                     
-            
+                                `;    
+                            } else if (type === 'oil') {
+                                return `
+                                        <h3>Search Results</h3>
+                                        <p>Type: ${type}</p>
+                                        <p>Condition: ${condition}</p>
+                                        <p>Here is the information based on your search criteria:</p>
+                                        <ul>
+                                            <li>Motor oil be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+                                            <li>Cooking oil be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
+                                        </ul>
+                                    `;
+                                } else if (type === 'styrofoam') {
+                                    return `
+                                            <h3>Search Results</h3>
+                                            <p>Type: ${type}</p>
+                                            <p>Condition: ${condition}</p>
+                                            <p>Here is the information based on your search criteria:</p>
+                                            <ul>
+                                                <li>Should be placed in the regular rubbish bin.</li>
+                                            </ul>
+                                        `;                   
+                                    } else if (type === 'aluminium') {
+                                        return `
+                                                <h3>Search Results</h3>
+                                                <p>Type: ${type}</p>
+                                                <p>Condition: ${condition}</p>
+                                                <p>Here is the information based on your search criteria:</p>
+                                                <ul>
+                                                    <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
+                                                    <li>Aluminium cans can be donated to <a href="https://www.instagram.com/leafcandleco" target="blank">Leaf Candle Co</a> for free. She'll come and collect your cans (even dirty cans) and make candles from them.</li>   
+                                                </ul>
+                                            `;   
             } else {
                 return `
                     <h3>Search Results</h3>
