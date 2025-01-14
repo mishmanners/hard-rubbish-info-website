@@ -8,33 +8,29 @@ Recycle, upcycle, or donate your unwanted items. This website provides users wit
 - **Informational Pages**: Learn about hard rubbish and its disposal guidelines.
 - **Contact Form**: Reach out with inquiries or feedback.
 
+## Usage Guidelines
+
+- Use the search form on the search page to find information about specific items.
+- Visit the about page for additional resources on hard rubbish disposal.
+- If you have information you'd like to add to the website, please submit it through the online contact form.
+
+
 ## Next steps
+
+TODOS:
+- Connect the site to Netifly to handle the contact form
+- Fetch data from external sources related to hard rubbish disposal and build out the database (currrently the search results are hard coded)
+
+Future functionality:
 
 In future, I'd love to build out the functionality of this website:
 
 - **Web Scraping**: Fetch data from external sources related to hard rubbish disposal.
-
-## Setup Instructions
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd hard-rubbish-info-website
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Open `src/index.html` in a web browser to view the website.
-
-## Usage Guidelines
-
-- Use the search form on the search page to find information about specific items.
-- Visit the about page for guidelines on hard rubbish disposal.
-- Contact us through the contact page for any inquiries or feedback.
+- **Login**: log in and track what items you are looking to get rid of.
+- **Facebook plug-in**: to list the Facebook pages in the area that deal with hard rubbish.
+- **Locality**: Build out the location data to include more council, states, and countries. Currently the wesbite is only showing information for Merri-Bek Council.
+- **Leaderboard**: Track your items and collect points for items that you 'save' from hardrubbish; both as a "seller" and "buyer".
+- **Connect with local businesses**: offer free advertising in return for products, discounts, or services that can be used as rewards; gamify the site.
 
 ## License
 
