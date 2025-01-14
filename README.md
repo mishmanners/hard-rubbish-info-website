@@ -23,6 +23,8 @@ This website was originally built for a <a href="https://dev.to/challenges/githu
 TODOS:
 - Connect the site to Netlify to handle the contact form
 - Fetch data from external sources related to hard rubbish disposal and build out the database (currently the search results are hard coded)
+- Change the database to a *.json database to better handle searching
+- Add "Submit" form where users can submit new resources/information for hard rubbish recycling and have the form in the exact format as the json database. Make it so that when the form is submitted a PR is opened to update the database.
 
 Future functionality:
 
