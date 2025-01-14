@@ -39,6 +39,13 @@ function updateConditionOptions() {
             { value: 'useable', text: 'Useable' },
             { value: 'nonuse', text: 'Not useable' },
         ];
+
+    } else if (type === 'baby') {
+        options = [
+            { value: 'useable', text: 'Useable' },
+            { value: 'nonuse', text: 'Not useable' },
+        ];
+
     } else if (type === 'glass') {
         options = [
             { value: 'broken', text: 'Broken' },
@@ -255,6 +262,34 @@ function fetchInformation(searchCriteria) {
             </ul>
         `;
 
+    } else if (type === 'baby' && condition === 'usable') {
+        return `
+            <h3>Search Results</h3>
+            <p>Type: ${type}</p>
+            <p>Condition: ${condition}</p>
+            <p>Here is the information based on your search criteria:</p>
+            <ul>
+                <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
+                <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
+                <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>.</li>
+                <li>Can be recycled at the <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for free.</li>
+                <li>Can be donated to <a href="https://www.facebook.com/BigGroupHug/" target="blank>The Big Hug Group</a>.</li>
+                <li>Usable toys can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
+            </ul>
+        `;
+        
+    } else if (type === 'baby' && condition === 'nonuse') {
+    return `
+        <h3>Search Results</h3>
+        <p>Type: ${type}</p>
+        <p>Condition: ${condition}</p>
+        <p>Here is the information based on your search criteria:</p>
+        <ul>
+            <li>Recycle unwearable clothing and unusable bedding through <a href="https://www.after.net.au/" target="blank">After Recycling</a>. They will recycle the textiles into industrial rags, insulation, and other products. Book a collection from them. directly.</li>
+            <li>Small amounts of clothing can be placed in the regular rubbish bin.</li>
+            <li>Can be taken to <a href="https://www.darebin.vic.gov.au/Waste-environment-and-climate/Resource-Recovery-Centre-Tip/What-we-do-and-dont-accept" target="blank">Darebin Resource Recovery Centre</a> for a fee.</li>
+        </ul>
+    `;
     } else if (type === 'toys' && condition === 'usable') {
         return `
             <h3>Search Results</h3>
