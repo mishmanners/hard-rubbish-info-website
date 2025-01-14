@@ -83,7 +83,7 @@ function fetchInformation(searchCriteria) {
             <ul>
                 <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                 <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
-                <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>. Call ahead to ensure they accept furniture, as not all shops are large enough to accept furniture.</li>
+                <li>Can also be donated to local charities such as <a href="https://www.vinnies.org.au/vic/shops?coords=-37.700454,144.766873&inputVal=3038" target="blank">St Vincent de Paul</a> or <a href="https://www.salvationarmy.org.au/locations/?location=COBURG%2C%20VIC%2C%203058&grouped_categories_keywords=Stores" target="blank">The Salvation Army</a>. Call ahead to ensure they accept furniture, as not all shops are large enough to accept furniture. <a href="https://www.rimern.org.au/rimern-home/donate/donate-goods/" target="blank">RIMERN Home Donate Goods</a> will accept small household furniture in good condition.</li>
             </ul>
         `;
     } else if (type === 'furniture' && condition === 'nonuse') {
@@ -156,7 +156,8 @@ function fetchInformation(searchCriteria) {
                 <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                 <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
                 <li>Can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
-            </ul>
+                <a href="https://www.rimern.org.au/rimern-home/donate/donate-goods/" target="blank">RIMERN Home Donate Goods</a> will accept white goods in good condition.</li>
+                </ul>
         `;
 
     } else if (type === 'lappliances' && condition === 'not-working') {
@@ -181,7 +182,8 @@ function fetchInformation(searchCriteria) {
                 <li>Can be donated via local Facebook groups such as <a href="https://www.facebook.com/groups/1039086312950286" target="blank">Hard Rubbish Rescue Merri-bek (Moreland)</a>, or local Karma network, such as <a href="https://www.facebook.com/groups/281961012221705" target="blank">Coburg Good Karma Network</a>.</li>
                 <li>Can be sold online on platforms like Facebook Marketplace, Gumtree, or eBay.</li>
                 <li>Can be sold in person at <a href="https://www.cashconverters.com.au/store-locator/vic" target="blank">Cash Converters</a>.</li>
-            </ul>
+                <a href="https://www.rimern.org.au/rimern-home/donate/donate-goods/" target="blank">RIMERN Home Donate Goods</a> will accept electrical goods in good condition.</li>
+                </ul>
         `;
 
     } else if (type === 'sappliances' && condition === 'not-working') {
